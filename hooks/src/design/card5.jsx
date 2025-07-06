@@ -49,7 +49,7 @@ export default function Card5(){
                         <h4 >Company-Name : {data.company.name}</h4>
                     </div>
                     <div>
-                        <h4 style={{ margin: '5px', textAlign: 'center' }} >Mobile : {data.mobile}</h4>
+                        <h4 style={{ margin: '5px', textAlign: 'center' }} >Mobile : {data.phone}</h4>
                     </div>
 
 
