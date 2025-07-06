@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    background-color: rgb(250, 212, 146);
+    margin: 5px;
+    width: 300px;
+    border-radius: 3px 3px;
+}
+
+.d1 {
+    background-color: rgb(221, 255, 141);
+    padding: 3px;
+    margin: 3px;
+    font-size: 14px;
+    color: rgb(251, 38, 38);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+}
+
+.container1 {
+    display: inline-flex;
+   
+    height: 310px;
+    background-color: rgb(252, 252, 247);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.c1 {
+   
+    display: inline-flex;
+   height: 340px;
+   
+}
+
+body {
+    background-color: bisque;
+    box-shadow: 1px 1px 1px 1px;
+   
+}
+
+.h2 {
+    margin-top: 20px;
+}
