@@ -13,20 +13,21 @@ export default function Card3(){
         }
     });
 
-    useEffect(() => async () => {
+   useEffect(() =>{
+        const fetchData = async () => {
         const res = await
             fetch(`https://jsonplaceholder.typicode.com/users/${userid}`)
-                .then((r) => r.json())
-                .then((data) => {
+             if (!res.ok) {
+            throw Error("User details not found")
+        } 
+           const data =await res.json();
 
                     setData(data);
-                });
-        if (!res.ok) {
-            throw Error("User details not found")
-        }
+                };
+               
 
+       fetchData();
     }, [userid]);
-
     return (
         <div className="c1">
 

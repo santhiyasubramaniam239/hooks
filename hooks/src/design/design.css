@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+   
 }
 
 .image {
@@ -26,6 +27,7 @@
     height: 310px;
     background-color: rgb(252, 252, 247);
     margin: 10px;
+   
     border-radius: 10px;
 }
 
@@ -39,6 +41,7 @@
 body {
     background-color: bisque;
     box-shadow: 1px 1px 1px 1px;
+    width: max-content;
    
 }
 

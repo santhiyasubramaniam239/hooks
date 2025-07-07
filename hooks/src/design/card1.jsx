@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import './design.css';
 export default function Card1() {
-   const [userid] = useState(1);
+    const [userid] = useState(1);
     const [data, setData] = useState({
         id: '',
         name: '',
@@ -13,18 +13,20 @@ export default function Card1() {
         }
     });
 
-    useEffect(() => async () => {
+   useEffect(() =>{
+        const fetchData = async () => {
         const res = await
             fetch(`https://jsonplaceholder.typicode.com/users/${userid}`)
-                .then((r) => r.json())
-                .then((data) => {
+             if (!res.ok) {
+            throw Error("User details not found")
+        } 
+           const data =await res.json();
 
                     setData(data);
-                });
-        if (!res.ok) {
-            throw Error("User details not found")
-        }
+                };
+               
 
+       fetchData();
     }, [userid]);
 
     return (
