@@ -9,7 +9,7 @@ import "./web.css"
 export default function Webdesign(){
      
     return(
-        <div className="main">
+        <div>
         <BrowserRouter>
         
         

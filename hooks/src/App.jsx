@@ -6,10 +6,12 @@ import Design from './design/carddesign'
 
 import Reference from './useref/focus'
 import Webdesign from './webdesign/1'
+import AllCards from './design/Allcards'
+import A5Cards from './design/5cards'
 function App() {
  
 
-  return <Design/>
+  return <A5Cards/>
     
      
   
